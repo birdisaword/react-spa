@@ -1,7 +1,7 @@
 import './App.css';
 import './components/contactsPage/contacts.css'
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import MainPage  from './components/mainPage/main_page'
 import Gallery from './components/photosPage/photos_page'
 import Contacts from './components/contactsPage/contacts'
@@ -9,36 +9,25 @@ import PostPage from './components/postsPage/post'
 import Navigation from './components/nav'
 
 function App() {
-  return (
+  return ( 
+     <HashRouter>
     <div className="App">
       <header className="App-header">
+    
       <div className='navigation'>
       <Navigation/>
       </div>
       
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/'>
-          <MainPage/>
-          </Route>
-
-          <Route path='/photos'>
-          <Gallery/>
-          </Route>
-
-          <Route path='/contacts'>
-          <Contacts />
-            </Route>
-
-            <Route path='/posts'>
-          <PostPage />
-            </Route>
-  
-          </Switch>
-     
-       </BrowserRouter>
+         <Switch>
+          <Route path='/' component={MainPage} exact />
+          <Route path='/photos' component={ Gallery} exact/>
+          <Route path='/contacts' component={Contacts } exact/>
+          <Route path='/posts' component={PostPage} exact/>
+        </Switch>
       </header>
     </div>
+    
+     </HashRouter>
   );
 }
 

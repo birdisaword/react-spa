@@ -16,9 +16,9 @@ export default class Navigation extends Component {
 
         <ul>
           <li><a href="/">MAIN</a></li>
-          <li><a href="/#posts">POSTS</a></li>
-          <li><a href="/#photos">PHOTOS</a></li>
-          <li><a href="/#contacts">CONTACTS</a></li>
+          <li><a href="/react-spa/#posts">POSTS</a></li>
+          <li><a href="/react-spa/#photos">PHOTOS</a></li>
+          <li><a href="/react-spa/#contacts">CONTACTS</a></li>
         </ul>
 
       </div>

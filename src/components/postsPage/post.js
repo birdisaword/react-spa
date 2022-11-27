@@ -1,33 +1,28 @@
-import './posts_style.css';
-import Post from './posts_page';
-import { user2 } from './posts_info'
-import { user1 } from './posts_info'
+import React from 'react';
+import { formatDate } from "./format_date";
 
-
-function PostPage() {
-
+function Post({ author, date, content, image }) {
   return (
-  <div className="App">
-  
-    <Post author={user1.author}
-          photo={user1.photo}
-          nickname={user1.nickname}
-          name={user1.name}
-          date={user1.date}
-          content={user1.content}
-          image={user1.image} 
-    />
+  <div className="post">
 
-<Post author={user2.author}
-          photo={user2.photo}
-          nickname={user2.nickname}
-          name={user2.name}
-          date={user2.date}
-          content={user2.content}
-          image={user2.image} 
-    />
+  <img className="photo" src={author.photo} />
+  
+ <div className='content'>
+  <div className="user">
+    <div className="name"> {author.name} </div>
+      <div className="info">
+        <div className="nickname"> {author.nickname} </div>
+        <div className="date"> {formatDate(date)} </div>
+      </div>
   </div>
+  </div>
+
+  <div className="text"> {content} </div>
+  <img className="image" src={image} />
+
+  </div>
+
   );
 }
 
-export default PostPage;
+export default Post

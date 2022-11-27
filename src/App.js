@@ -2,11 +2,11 @@ import './App.css';
 import './components/contactsPage/contacts.css'
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import MainPage  from './components/mainPage/main_page'
-import Gallery from './components/photosPage/photos_page'
-import Contacts from './components/contactsPage/contacts'
-import PostPage from './components/postsPage/post'
-import Navigation from './components/nav'
+import MainPage  from './components/mainPage/MainPage'
+import Gallery from './components/photosPage/PhotosPage'
+import Contacts from './components/contactsPage/Contacts'
+import PostPage from './components/postsPage/PostsPage'
+import Navigation from './components/Nav'
 
 function App() {
   return ( 

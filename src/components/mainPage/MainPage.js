@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './main_page.css'
 
 export default class MainPage extends Component {

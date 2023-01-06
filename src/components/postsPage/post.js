@@ -7,7 +7,7 @@ function Post({ author, date, content, image }) {
 
   <img className="photo" src={author.photo} />
   
- <div className='content'>
+ <div>
   <div className="user">
     <div className="name"> {author.name} </div>
       <div className="info">
@@ -17,7 +17,7 @@ function Post({ author, date, content, image }) {
   </div>
   </div>
 
-  <div className="text"> {content} </div>
+  <div className="content"> {content} </div>
   <img className="image" src={image} />
 
   </div>

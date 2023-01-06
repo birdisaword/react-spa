@@ -15,7 +15,6 @@ function PostPage() {
           name={user1.name}
           date={user1.date}
           content={user1.content}
-          image={user1.image} 
     />
 
     <Post author={user2.author}
@@ -24,7 +23,6 @@ function PostPage() {
           name={user2.name}
           date={user2.date}
           content={user2.content}
-          image={user2.image} 
     />
   </div>
   );

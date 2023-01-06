@@ -8,7 +8,7 @@ export default class Navigation extends Component {
         <ul>
           <li><a href="/react-spa/#/">MAIN</a></li>
           <li><a href="/react-spa/#posts">POSTS</a></li>
-          <li><a href="/react-spa/#photos">PHOTOS</a></li>
+          <li><a href="/react-spa/#photos">GALLERY</a></li>
           <li><a href="/react-spa/#contacts">CONTACTS</a></li>
         </ul>
 
